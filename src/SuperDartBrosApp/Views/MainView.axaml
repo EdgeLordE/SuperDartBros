@@ -42,18 +42,40 @@
 
 			
 
-			<Button Background="Transparent">
+			<Button x:Name="Normal20" Background="Transparent" BorderThickness="0">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
 							<Path Fill="Black">
 								<Path.Data>
 									<PathGeometry>
-										<PathFigure StartPoint="395,265">
-											<LineSegment Point="405,265" />
-											<LineSegment Point="445,90" />
-											<ArcSegment Point="320,90" Size="40,10" SweepDirection="CounterClockwise" />
-											<LineSegment Point="395,265" />
+										<PathFigure StartPoint="394.5,265">
+											<LineSegment Point="405.5,265" />
+											<LineSegment Point="433.05,103" />
+											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise"/>
+											<LineSegment Point="394.5,265" />
+											<ArcSegment Point="405.5,265" Size="40,20" SweepDirection="Clockwise"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+
+			<Button x:Name="Normal1" Background="Transparent" BorderThickness="0">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<LineSegment Point="" />
+											<LineSegment Point="433.05,103" />
+											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise"/>
+											
 										</PathFigure>
 									</PathGeometry>
 								</Path.Data>
