@@ -64,7 +64,7 @@
 				</Button.Template>
 			</Button>
 
-			<Button x:Name="Normal1" Background="Transparent" BorderThickness="0">
+			<Button x:Name="ButtonNormal20" Background="Transparent" BorderThickness="0">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -72,10 +72,14 @@
 								<Path.Data>
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
-											<LineSegment Point="" />
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="405.5,265" />
+											<!-- Linie zur Spitze des Pizzastücks -->
 											<LineSegment Point="433.05,103" />
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise"/>
-											
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
 										</PathFigure>
 									</PathGeometry>
 								</Path.Data>
@@ -85,7 +89,7 @@
 				</Button.Template>
 			</Button>
 
-			
+
 		</Canvas>
 		
 		
