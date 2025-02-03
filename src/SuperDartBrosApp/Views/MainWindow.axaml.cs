@@ -10,14 +10,14 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    private async void  BtnStart_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    private void BtnStart_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        if (TBPlayer1.Text == "" || TBPlayer2.Text == "" || TBPlayer1.Text == " " || TBPlayer2.Text == " ")
+        bool failed = false;
+        if (string.IsNullOrWhiteSpace(TBPlayer1.Text) || string.IsNullOrWhiteSpace(TBPlayer2.Text))
         {
-            MessageBox msgBox = new MessageBox("Hallo, das ist eine eigene MessageBox!");
-            await msgBox.ShowDialog(this);
+            failed = true;
         }
-        else
+        if (failed == false)
         {
             UserControl userControl = new MainView();
             Content = userControl;
