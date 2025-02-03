@@ -14,10 +14,60 @@
 
 	<Grid>
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="800"/>
 			<ColumnDefinition Width="*"/>
 		</Grid.ColumnDefinitions>
-		<Button Content="Dartboard" Grid.Column="0"/>
+
+		
+		<Canvas Height="600" Width="800">
+			<Ellipse Width="600" Height="600" Fill="AliceBlue" Canvas.Left="0" Canvas.Top="0"></Ellipse>
+			<Button Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Ellipse Fill="Green"/>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+			<Button Width="30" Height="30" Background="Red" BorderThickness="0" Canvas.Left="385" Canvas.Top="285">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Ellipse Fill="Red" />
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+
+			
+
+			<Button Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="395,265">
+											<LineSegment Point="405,265" />
+											<LineSegment Point="445,90" />
+											<ArcSegment Point="320,90" Size="40,10" SweepDirection="CounterClockwise" />
+											<LineSegment Point="395,265" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+
+			
+		</Canvas>
+		
+		
+		
 		<Grid Grid.Column="1">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="0.5*"/>
