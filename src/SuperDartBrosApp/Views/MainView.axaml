@@ -20,7 +20,7 @@
 
 		
 		<Canvas Height="600" Width="800">
-			<Ellipse Width="500" Height="500" Fill="AliceBlue" Canvas.Left="150" Canvas.Top="50"></Ellipse>
+			<Ellipse Width="450" Height="450" Fill="AliceBlue" Canvas.Left="175" Canvas.Top="75"></Ellipse>
 			<Button Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
