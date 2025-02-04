@@ -1,4 +1,5 @@
 ﻿using Avalonia.Controls;
+using Avalonia.Input;
 using ReactiveUI;
 
 namespace SuperDartBrosApp.Views;
@@ -8,6 +9,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        //Cursor = new Cursor(StandardCursorType.None); Für Raspberry Pi später ändern
     }
 
     private void BtnStart_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
@@ -21,6 +23,7 @@ public partial class MainWindow : Window
         {
             UserControl userControl = new MainView();
             Content = userControl;
+            // TODO: Spielernamen übergeben
         }
     }
 }
