@@ -20,7 +20,7 @@
 
 		
 		<Canvas x:Name="CanvasDart" Height="600" Width="800">
-			<Ellipse Width="400" Height="400" Fill="AliceBlue" Canvas.Left="200" Canvas.Top="100"></Ellipse>
+			<Ellipse Width="430" Height="430" Fill="AliceBlue" Canvas.Left="185" Canvas.Top="85"></Ellipse>
 			<Button Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -596,9 +596,33 @@
 					<RotateTransform Angle="342" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-			
-			
 
+
+			<Button x:Name="ButtonDouble20" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+			</Button>
+			
+			
 			
 		</Canvas>
 		
