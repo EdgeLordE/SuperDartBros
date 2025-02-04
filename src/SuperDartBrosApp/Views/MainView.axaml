@@ -14,10 +14,86 @@
 
 	<Grid>
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="800"/>
 			<ColumnDefinition Width="*"/>
 		</Grid.ColumnDefinitions>
-		<Button Content="Dartboard" Grid.Column="0"/>
+
+		
+		<Canvas Height="600" Width="800">
+			<Ellipse Width="400" Height="400" Fill="AliceBlue" Canvas.Left="200" Canvas.Top="100"></Ellipse>
+			<Button Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Ellipse Fill="Green"/>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+			<Button Width="30" Height="30" Background="Red" BorderThickness="0" Canvas.Left="385" Canvas.Top="285">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Ellipse Fill="Red" />
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+
+			
+
+			<Button x:Name="Normal20" Background="Transparent" BorderThickness="0">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="394.5,265">
+											<LineSegment Point="405.5,265" />
+											<LineSegment Point="433.05,103" />
+											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise"/>
+											<LineSegment Point="394.5,265" />
+											<ArcSegment Point="405.5,265" Size="40,20" SweepDirection="Clockwise"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+
+			<Button x:Name="ButtonNormal20" Background="Transparent" BorderThickness="0">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="405.5,265" />
+											<!-- Linie zur Spitze des Pizzastücks -->
+											<LineSegment Point="433.05,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+
+
+		</Canvas>
+		
+		
+		
 		<Grid Grid.Column="1">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="0.5*"/>
