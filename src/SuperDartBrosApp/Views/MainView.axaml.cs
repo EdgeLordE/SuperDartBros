@@ -13,12 +13,7 @@ public partial class MainView : UserControl
         
     }
 
-    private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
-    {
-
-    }
-
-    
     
 
+    
 }
