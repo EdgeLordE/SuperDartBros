@@ -21,7 +21,7 @@
 		
 		<Canvas x:Name="CanvasDart" Height="600" Width="800">
 			<Ellipse Width="400" Height="400" Fill="AliceBlue" Canvas.Left="200" Canvas.Top="100"></Ellipse>
-			<Button Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265">
+			<Button Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -30,7 +30,7 @@
 					</ControlTemplate>
 				</Button.Template>
 			</Button>
-			<Button Width="30" Height="30" Background="Red" BorderThickness="0" Canvas.Left="385" Canvas.Top="285">
+			<Button Width="30" Height="30" Background="Red" BorderThickness="0" Canvas.Left="385" Canvas.Top="285" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -104,11 +104,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -120,7 +118,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="37.89" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="36" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -134,11 +132,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -150,7 +146,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="56.84" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="54" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -164,11 +160,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -180,7 +174,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="75.79" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="72" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -194,11 +188,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -210,7 +202,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="94.74" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="90" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -224,11 +216,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -240,7 +230,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="113.68" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="108" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -253,11 +243,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -269,7 +257,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="132.63" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="126" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -283,11 +271,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -299,7 +285,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="151.58" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="144" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -313,11 +299,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -329,7 +313,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="170.53" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="162" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -343,11 +327,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -359,7 +341,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="189.47" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="180" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -373,11 +355,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -389,7 +369,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="208.42" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="198" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -403,11 +383,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -419,7 +397,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="227.37" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="216" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -433,11 +411,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -449,7 +425,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="246.32" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="234" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -463,11 +439,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -479,7 +453,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="265.26" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="252" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -493,11 +467,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -509,7 +481,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="284.21" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="270" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -523,11 +495,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -539,7 +509,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="303.16" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="288" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -553,11 +523,9 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -569,7 +537,7 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="322.11" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="306" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
@@ -578,16 +546,14 @@
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
-							<Path Fill="White">
+							<Path Fill="Black">
 								<Path.Data>
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -599,10 +565,37 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="56.84" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="324" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="ButtonNormal5" />
+
+
+			<Button x:Name="ButtonNormal5" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="White">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="342" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
 			
 			
 
