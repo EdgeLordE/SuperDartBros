@@ -20,8 +20,31 @@
 
 		
 		<Canvas x:Name="CanvasDart" Height="600" Width="800">
-			<Ellipse Width="440" Height="440" Fill="AliceBlue" Canvas.Left="180" Canvas.Top="80"></Ellipse>
+			<Ellipse Width="200" Height="200" Fill="AliceBlue" Canvas.Left="300" Canvas.Top="200" ZIndex="2"></Ellipse>
+			<Ellipse Width="240" Height="240" Fill="Yellow" Canvas.Left="280" Canvas.Top="180" ZIndex="1"></Ellipse>
 
+
+
+			<Button Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265" ZIndex="2">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Ellipse Fill="Green"/>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+			<Button Width="30" Height="30" Background="Red" BorderThickness="0" Canvas.Left="385" Canvas.Top="285" ZIndex="2">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Ellipse Fill="Red" />
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+			
+			
 
 			
 
@@ -589,24 +612,7 @@
 			
 			
 			
-			<Button Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265" ZIndex="1">
-				<Button.Template>
-					<ControlTemplate TargetType="Button">
-						<Grid>
-							<Ellipse Fill="Green"/>
-						</Grid>
-					</ControlTemplate>
-				</Button.Template>
-			</Button>
-			<Button Width="30" Height="30" Background="Red" BorderThickness="0" Canvas.Left="385" Canvas.Top="285" ZIndex="1">
-				<Button.Template>
-					<ControlTemplate TargetType="Button">
-						<Grid>
-							<Ellipse Fill="Red" />
-						</Grid>
-					</ControlTemplate>
-				</Button.Template>
-			</Button>
+			
 
 			
 
