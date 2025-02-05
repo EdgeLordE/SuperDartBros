@@ -21,15 +21,13 @@ public partial class MainWindow : Window
         {
             return;
         }
-
         var players = new List<Player>
-            {
-                new Player { Name = TBPlayer1.Text },
-                new Player { Name = TBPlayer2.Text }
-            };
 
+        {
+            new Player(TBPlayer1.Text, 0),
+            new Player(TBPlayer2.Text, 0)
+        };
         var mainGameSettings = new GameSettings(players);
         Content = mainGameSettings;
     }
-
 }

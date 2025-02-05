@@ -1,9 +1,10 @@
 ﻿using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-
+using SuperDartBrosApp.Models;
 using SuperDartBrosApp.ViewModels;
 using SuperDartBrosApp.Views;
+using System.Collections.Generic;
 
 namespace SuperDartBrosApp;
 
@@ -23,12 +24,18 @@ public partial class App : Application
                 DataContext = new MainViewModel()
             };
         }
-        else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
+        else if(ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
         {
-            singleViewPlatform.MainView = new MainView
+            var players = new List<Player>
             {
-                DataContext = new MainViewModel()
+                new Player("Player1", 0),
+                new Player("Player2", 0)
             };
+
+            var gameSettings = new GameSettings(players);
+            var mainView = new MainView(gameSettings); 
+
+            singleViewPlatform.MainView = mainView;
         }
 
         base.OnFrameworkInitializationCompleted();

@@ -1,12 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using DynamicData;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace SuperDartBrosApp.Models
 {
-public class Player
+    public class Player
     {
         public string Name { get; set; }
         public int Score { get; set; }
-        
+
         public List<string> Points = new List<string>();
 
         public bool IsBot { get; set; }
@@ -27,28 +32,12 @@ public class Player
             }
         }
 
-        public void AddPoint(int points)
-        {
-            Points.Add(point);
-        }
+     
 
         public void ResetPoints()
         {
             Points.Clear();
         }
 
-        public void Multiplier(int multiplier)
-        {
-
-            if(multiplier == 2)
-            {
-                Points.Add("D");
-            }
-            else if(multiplier == 3)
-            {
-                Points.Add("T");
-            }
-
-        }
     }
 }

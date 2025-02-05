@@ -12,7 +12,7 @@
 		<vm:MainViewModel />
 	</Design.DataContext>
 
-	<Grid>
+	<Grid Background="#2E3B4E">
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="800"/>
 			<ColumnDefinition Width="*"/>
@@ -20,8 +20,12 @@
 
 
 		<Canvas x:Name="CanvasDart" Height="600" Width="800">
-			<Ellipse Width="400" Height="400" Fill="AliceBlue" Canvas.Left="200" Canvas.Top="100"></Ellipse>
-			<Button Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265">
+			<Ellipse Width="200" Height="200" Fill="AliceBlue" Canvas.Left="300" Canvas.Top="200" ZIndex="2"></Ellipse>
+			<Ellipse Width="240" Height="240" Fill="Yellow" Canvas.Left="280" Canvas.Top="180" ZIndex="1"></Ellipse>
+
+
+
+			<Button x:Name="Bull25" Click="Bull25_Click" Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265" ZIndex="2">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -30,7 +34,7 @@
 					</ControlTemplate>
 				</Button.Template>
 			</Button>
-			<Button Width="30" Height="30" Background="Red" BorderThickness="0" Canvas.Left="385" Canvas.Top="285">
+			<Button x:Name="BullE50" Click="BullE50_Click" Width="30" Height="30" Background="Red" BorderThickness="0" Canvas.Left="385" Canvas.Top="285" ZIndex="2">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -39,11 +43,547 @@
 					</ControlTemplate>
 				</Button.Template>
 			</Button>
+			
+			
+
+			
+
+			<Button x:Name="ButtonDouble20" Click="D20_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+
+			
+			<Button x:Name="ButtonDouble1" Click="D1_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Green">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="18" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+			<Button x:Name="ButtonDouble18" Click="D18_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="36" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
 
 
+			<Button x:Name="ButtonDouble4" Click="D4_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Green">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="54" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
 
 
-			<Button x:Name="ButtonNormal1" Background="Transparent" BorderThickness="0">
+			<Button x:Name="ButtonDouble13" Click="D13_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="72" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble6" Click="D6_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Green">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="90" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble10" Click="D10_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="108" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble15" Click="D15_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Green">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="126" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble2" Click="D2_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="144" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble17" Click="D17_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Green">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="162" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble3" Click="D3_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="180" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble19" Click="D19_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Green">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="198" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble7" Click="D7_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="216" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble16" Click="D16_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Green">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="234" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble8" Click="D8_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="252" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble11" Click="D11_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Green">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="270" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble14" Click="D14_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="288" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble9" Click="D9_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Green">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="306" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble12" Click="D12_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Red">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="324" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonDouble5" Click="D5_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Green">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="434.5,83" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="365.5,83" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="342" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+			
+			<Button x:Name="ButtonNormal1" Click="S11_Click" Background="Transparent" BorderThickness="0">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -52,11 +592,60 @@
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+					
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="18" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+			
+			<Button x:Name="ButtonNormal20" Click="S20_Click" Background="Transparent" BorderThickness="0">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur Spitze des Pizzastücks -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal18" Click="S18_Click" Background="Transparent" BorderThickness="0" >
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -68,50 +657,23 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="18.6" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="36" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
-			<Button x:Name="ButtonNormal20" Background="Transparent" BorderThickness="0">
+
+			<Button x:Name="ButtonNormal4" Click="S4_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
-							<Path Fill="Black">
+							<Path Fill="White">
 								<Path.Data>
 									<PathGeometry>
 										<PathFigure StartPoint="400,300">
 											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
+											<LineSegment Point="431.4,103" />
 											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
-											<!-- Linie zurück zum Startpunkt -->
-											<LineSegment Point="400,300" />
-										</PathFigure>
-									</PathGeometry>
-								</Path.Data>
-							</Path>
-						</Grid>
-					</ControlTemplate>
-				</Button.Template>
-			</Button>
-
-
-			<Button x:Name="ButtonNormal18" Background="Transparent" BorderThickness="0" >
-				<Button.Template>
-					<ControlTemplate TargetType="Button">
-						<Grid>
-							<Path Fill="Black">
-								<Path.Data>
-									<PathGeometry>
-										<PathFigure StartPoint="400,300">
-											<!-- Linie zur rechten oberen Ecke -->
-											<LineSegment Point="405.5,265" />
-											<!-- Linie zur Spitze des Pizzastücks -->
-											<LineSegment Point="433.05,103" />
-											<!-- Runder Rand an der Oberseite -->
-											<ArcSegment Point="366.95,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
 											<!-- Linie zurück zum Startpunkt -->
 											<LineSegment Point="400,300" />
 										</PathFigure>
@@ -123,43 +685,514 @@
 
 				</Button.Template>
 				<Button.RenderTransform>
-					<RotateTransform Angle="37.89" CenterX="183" CenterY="150" />
+					<RotateTransform Angle="54" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
 
 
+			<Button	x:Name="ButtonNormal13" Click="S13_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="72" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal6" Click="S6_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="White">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="90" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal10" Click="S10_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="108" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+			<Button x:Name="ButtonNormal15" Click="S15_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="White">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="126" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal2" Click="S2_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="144" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal17" Click="S17_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="White">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="162" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal3" Click="S3_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="180" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal19" Click="S19_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="White">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="198" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal7" Click="S7_Click">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="216" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal16" Click="S16_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="White">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="234" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal8" Click="S8_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="252" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal11" Click="S11_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="White">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="270" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal14" Click="S14_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="288" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal9" Click="S9_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="White">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="306" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal12" Click="S12_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="Black">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="324" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			<Button x:Name="ButtonNormal5" Click="S5_Click" Background="Transparent">
+				<Button.Template>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Path Fill="White">
+								<Path.Data>
+									<PathGeometry>
+										<PathFigure StartPoint="400,300">
+											<!-- Linie zur rechten oberen Ecke -->
+											<LineSegment Point="431.4,103" />
+											<!-- Runder Rand an der Oberseite -->
+											<ArcSegment Point="368.6,103" Size="40,8" SweepDirection="CounterClockwise" />
+											<!-- Linie zurück zum Startpunkt -->
+											<LineSegment Point="400,300" />
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+
+				</Button.Template>
+				<Button.RenderTransform>
+					<RotateTransform Angle="342" CenterX="183" CenterY="150" />
+				</Button.RenderTransform>
+			</Button>
+
+
+			
+			
+			
+			
 		</Canvas>
 
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="2*"/>
+			</Grid.ColumnDefinitions>
 
+			<StackPanel Grid.Column="0" Margin="5">
+				<Label Content="Scoreboard" Foreground="White" FontSize="18" HorizontalAlignment="Center"/>
+				<ListBox x:Name="ScoreBoardList" />
+			</StackPanel>
 
-		<Grid Grid.Column="1">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="0.5*"/>
-				<RowDefinition Height="3*"/>
-				<RowDefinition Height="*"/>
-			</Grid.RowDefinitions>
-			<ComboBox Grid.Row="0" Margin="0,15,0,0" HorizontalAlignment="Left" PlaceholderText="Select a player">
-
-			</ComboBox>
-			<Grid Grid.Row="1">
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="*"/>
-					<ColumnDefinition Width="*"/>
-					<ColumnDefinition Width="*"/>
-				</Grid.ColumnDefinitions>
+			<Grid Grid.Column="1" Margin="400,100,0,0">
 				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
 					<RowDefinition Height="*"/>
-					<RowDefinition Height="12*"/>
+					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
-				<Label Grid.Row="0" Content="Wurf 1:"/>
-				<Label Grid.Row="0" Grid.Column="1" Content="Wurf 2:"/>
-				<Label Grid.Row="0" Grid.Column="2" Content="Wurf 3:"/>
-				<Label Grid.Row="1" Content="XX"/>
-				<Label Grid.Row="1" Grid.Column="1" Content="XX"/>
-				<Label Grid.Row="1" Grid.Column="2" Content="XX"/>
+
+				<StackPanel Grid.Row="0" Spacing="5" HorizontalAlignment="Center">
+					<Label Content="Spieler am Zug:" Foreground="White" FontSize="16"/>
+				</StackPanel>
+
+				<StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="50">
+					<Label x:Name="CurrentPlayerLabel" Content="Player" Foreground="White" FontSize="16"/>
+					<Label x:Name="ScoreLabel" Content="00" Foreground="White" FontSize="16"/>
+				</StackPanel>
+
+				<Grid Grid.Row="2" Margin="0,100,0,0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+
+					<Label Grid.Row="0" Content="Wurf 1:" Foreground="White"/>
+					<Label Grid.Row="0" Grid.Column="1" Content="Wurf 2:" Foreground="White"/>
+					<Label Grid.Row="0" Grid.Column="2" Content="Wurf 3:" Foreground="White"/>
+
+					<Label x:Name="Throw1Label" Grid.Row="1" Content="" Foreground="White"/>
+					<Label x:Name="Throw2Label" Grid.Row="1" Grid.Column="1" Content="" Foreground="White"/>
+					<Label x:Name="Throw3Label" Grid.Row="1" Grid.Column="2" Content="" Foreground="White"/>
+				</Grid>
+
+	
 			</Grid>
-			<Button x:Name="BtnReset" Grid.Row="2" Margin="0,0,0,10" VerticalAlignment="Bottom" Content="Zurücksetzen"/>
-			<Button Grid.Row="2" Margin="135,0,0,10" VerticalAlignment="Bottom" Content="Addieren"/>
 		</Grid>
-	</Grid>
+		</Grid>
 </UserControl>

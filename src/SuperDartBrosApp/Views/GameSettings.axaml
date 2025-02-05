@@ -10,7 +10,7 @@
 
 			<Border Background="#3F4E63" CornerRadius="8" Padding="10">
 				<StackPanel Spacing="5">
-					<CheckBox Content="Zufällige Reihenfolge" Foreground="White"/>
+					<CheckBox x:Name="RandomOrderCheckBox" Content="Zufällige Reihenfolge" Foreground="White"/>
 					<ListBox x:Name="PlayersListBox" ItemsSource="{Binding Players}" Background="Transparent" BorderThickness="0" Height="105">
 						<ListBox.ItemTemplate>
 							<DataTemplate>
@@ -35,41 +35,43 @@
 			</Border>
 
 			<Border Background="#3F4E63" CornerRadius="8" Padding="10">
-				<StackPanel Spacing="5">
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="50">
+
+					<StackPanel Spacing="5">
 					<TextBlock Text="Spielmodus" Foreground="White"/>
-					<ComboBox>
+					<ComboBox x:Name="GameModeComboBox" SelectedIndex="0">
 						<ComboBoxItem Content="X01"/>
 						<ComboBoxItem Content="Highscore"/>
 						<ComboBoxItem Content="Around The Clock"/>
 						<ComboBoxItem Content="Shoot by Numbers"/>
 					</ComboBox>
+					</StackPanel>
 
-					<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="50">
-						<StackPanel Spacing="5">
-							<TextBlock Text="Startpunkte" Foreground="White"/>
-							<ComboBox>
-								<ComboBoxItem Content="101"/>
-								<ComboBoxItem Content="301"/>
-								<ComboBoxItem Content="501"/>
-								<ComboBoxItem Content="601"/>
-								<ComboBoxItem Content="701"/>
-								<ComboBoxItem Content="901"/>
-								<ComboBoxItem Content="1001"/>
-								<ComboBoxItem Content="Individuell"/>
-							</ComboBox>
-						</StackPanel>
-						<StackPanel Spacing="5">
-							<TextBlock Text="Check-Out" Foreground="White"/>
-							<ComboBox>
-								<ComboBoxItem Content="Straight Out"/>
-								<ComboBoxItem Content="Double Out"/>
-								<ComboBoxItem Content="Triple Out"/>
-								<ComboBoxItem Content="Master Out"/>
-							</ComboBox>
-						</StackPanel>
-						<StackPanel Spacing="5">
+					<StackPanel Spacing="5">
+						<TextBlock Text="Startpunkte" Foreground="White"/>
+						<ComboBox x:Name="StartPointsComboBox" SelectedIndex="2">
+							<ComboBoxItem Content="101"/>
+							<ComboBoxItem Content="301"/>
+							<ComboBoxItem Content="501"/>
+							<ComboBoxItem Content="601"/>
+							<ComboBoxItem Content="701"/>
+							<ComboBoxItem Content="901"/>
+							<ComboBoxItem Content="1001"/>
+							<ComboBoxItem Content="Individuell"/>
+						</ComboBox>
+					</StackPanel>
+					<StackPanel Spacing="5">
+						<TextBlock Text="Check-Out" Foreground="White"/>
+						<ComboBox x:Name="CheckOutComboBox" SelectedIndex="0">
+							<ComboBoxItem Content="Straight Out"/>
+							<ComboBoxItem Content="Double Out"/>
+							<ComboBoxItem Content="Triple Out"/>
+							<ComboBoxItem Content="Master Out"/>
+						</ComboBox>
+					
+						<!--<StackPanel Spacing="5">
 							<TextBlock Text="Sets" Foreground="White"/>
-							<ComboBox>
+							<ComboBox x:Name="SetsComboBox">
 								<ComboBoxItem Content="1"/>
 								<ComboBoxItem Content="2"/>
 								<ComboBoxItem Content="3"/>
@@ -95,7 +97,7 @@
 						</StackPanel>
 						<StackPanel Spacing="5">
 							<TextBlock Text="Legs" Foreground="White"/>
-							<ComboBox>
+							<ComboBox x:Name="LegsComboBox">
 								<ComboBoxItem Content="1"/>
 								<ComboBoxItem Content="2"/>
 								<ComboBoxItem Content="3"/>
@@ -118,8 +120,8 @@
 								<ComboBoxItem Content="20"/>
 								<ComboBoxItem Content="21"/>
 							</ComboBox>
+					</StackPanel>-->
 						</StackPanel>
-					</StackPanel>
 				</StackPanel>
 			</Border>
 
