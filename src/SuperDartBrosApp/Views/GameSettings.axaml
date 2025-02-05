@@ -1,0 +1,130 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
+             x:Class="SuperDartBrosApp.GameSettings">
+	<Grid Background="#2E3B4E">
+		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
+			<TextBlock Text="Neues Spiel" FontSize="24" Foreground="White" HorizontalAlignment="Center"/>
+
+			<Border Background="#3F4E63" CornerRadius="8" Padding="10">
+				<StackPanel Spacing="5">
+					<CheckBox Content="Zufällige Reihenfolge" Foreground="White"/>
+					<ListBox x:Name="PlayersListBox" ItemsSource="{Binding Players}" Background="Transparent" BorderThickness="0" Height="105">
+						<ListBox.ItemTemplate>
+							<DataTemplate>
+								<StackPanel Orientation="Horizontal" Spacing="5">
+									<TextBox Text="{Binding Name, Mode=TwoWay}" Width="150" IsEnabled="{Binding IsTextBoxEnabled}"/>
+									<Button Content="Löschen"
+											Foreground="White"
+											Background="#1E2A3A"
+											Width="80"
+											Click="DeletePlayer_Click"
+											DataContext="{Binding}"/>
+								</StackPanel>
+							</DataTemplate>
+						</ListBox.ItemTemplate>
+					</ListBox>
+					<TextBlock Text="Klicke auf 'Spieler hinzufügen' oder auf 'Computer hinzufügen'." Foreground="Gray"/>
+					<StackPanel Orientation="Horizontal" Spacing="10">
+						<Button x:Name="AddPlayerButton" Content="Spieler hinzufügen" Foreground="White" Click="AddPlayer_Click"/>
+						<Button x:Name="AddBotButton" Content="Bot hinzufügen" Foreground="White" Click="AddBot_Click"/>
+					</StackPanel>
+				</StackPanel>
+			</Border>
+
+			<Border Background="#3F4E63" CornerRadius="8" Padding="10">
+				<StackPanel Spacing="5">
+					<TextBlock Text="Spielmodus" Foreground="White"/>
+					<ComboBox>
+						<ComboBoxItem Content="X01"/>
+						<ComboBoxItem Content="Highscore"/>
+						<ComboBoxItem Content="Around The Clock"/>
+						<ComboBoxItem Content="Shoot by Numbers"/>
+					</ComboBox>
+
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="50">
+						<StackPanel Spacing="5">
+							<TextBlock Text="Startpunkte" Foreground="White"/>
+							<ComboBox>
+								<ComboBoxItem Content="101"/>
+								<ComboBoxItem Content="301"/>
+								<ComboBoxItem Content="501"/>
+								<ComboBoxItem Content="601"/>
+								<ComboBoxItem Content="701"/>
+								<ComboBoxItem Content="901"/>
+								<ComboBoxItem Content="1001"/>
+								<ComboBoxItem Content="Individuell"/>
+							</ComboBox>
+						</StackPanel>
+						<StackPanel Spacing="5">
+							<TextBlock Text="Check-Out" Foreground="White"/>
+							<ComboBox>
+								<ComboBoxItem Content="Straight Out"/>
+								<ComboBoxItem Content="Double Out"/>
+								<ComboBoxItem Content="Triple Out"/>
+								<ComboBoxItem Content="Master Out"/>
+							</ComboBox>
+						</StackPanel>
+						<StackPanel Spacing="5">
+							<TextBlock Text="Sets" Foreground="White"/>
+							<ComboBox>
+								<ComboBoxItem Content="1"/>
+								<ComboBoxItem Content="2"/>
+								<ComboBoxItem Content="3"/>
+								<ComboBoxItem Content="4"/>
+								<ComboBoxItem Content="5"/>
+								<ComboBoxItem Content="6"/>
+								<ComboBoxItem Content="7"/>
+								<ComboBoxItem Content="8"/>
+								<ComboBoxItem Content="9"/>
+								<ComboBoxItem Content="10"/>
+								<ComboBoxItem Content="11"/>
+								<ComboBoxItem Content="12"/>
+								<ComboBoxItem Content="13"/>
+								<ComboBoxItem Content="14"/>
+								<ComboBoxItem Content="15"/>
+								<ComboBoxItem Content="16"/>
+								<ComboBoxItem Content="17"/>
+								<ComboBoxItem Content="18"/>
+								<ComboBoxItem Content="19"/>
+								<ComboBoxItem Content="20"/>
+								<ComboBoxItem Content="21"/>
+							</ComboBox>
+						</StackPanel>
+						<StackPanel Spacing="5">
+							<TextBlock Text="Legs" Foreground="White"/>
+							<ComboBox>
+								<ComboBoxItem Content="1"/>
+								<ComboBoxItem Content="2"/>
+								<ComboBoxItem Content="3"/>
+								<ComboBoxItem Content="4"/>
+								<ComboBoxItem Content="5"/>
+								<ComboBoxItem Content="6"/>
+								<ComboBoxItem Content="7"/>
+								<ComboBoxItem Content="8"/>
+								<ComboBoxItem Content="9"/>
+								<ComboBoxItem Content="10"/>
+								<ComboBoxItem Content="11"/>
+								<ComboBoxItem Content="12"/>
+								<ComboBoxItem Content="13"/>
+								<ComboBoxItem Content="14"/>
+								<ComboBoxItem Content="15"/>
+								<ComboBoxItem Content="16"/>
+								<ComboBoxItem Content="17"/>
+								<ComboBoxItem Content="18"/>
+								<ComboBoxItem Content="19"/>
+								<ComboBoxItem Content="20"/>
+								<ComboBoxItem Content="21"/>
+							</ComboBox>
+						</StackPanel>
+					</StackPanel>
+				</StackPanel>
+			</Border>
+
+			<TextBlock Text="Erweiterte Optionen" Foreground="#7aa9ff" HorizontalAlignment="Center"/>
+			<Button Content="Spiel starten" x:Name="BtnStart" Click="BtnStart_Click" HorizontalAlignment="Center" Background="#FF8C00" Foreground="White" Padding="10" Width="200"/>
+		</StackPanel>
+	</Grid>
+</UserControl>
