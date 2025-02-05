@@ -6,19 +6,19 @@
              mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
              x:Class="SuperDartBrosApp.Views.MainView"
              x:DataType="vm:MainViewModel">
-  <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-    <vm:MainViewModel />
-  </Design.DataContext>
+		<vm:MainViewModel />
+	</Design.DataContext>
 
-	<Grid>
+	<Grid Background="#2E3B4E">
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="800"/>
 			<ColumnDefinition Width="*"/>
 		</Grid.ColumnDefinitions>
 
-		
+
 		<Canvas x:Name="CanvasDart" Height="600" Width="800">
 			<Ellipse Width="200" Height="200" Fill="AliceBlue" Canvas.Left="300" Canvas.Top="200" ZIndex="2"></Ellipse>
 			<Ellipse Width="240" Height="240" Fill="Yellow" Canvas.Left="280" Canvas.Top="180" ZIndex="1"></Ellipse>
@@ -1142,37 +1142,57 @@
 			
 			
 		</Canvas>
-		
-		
-		
-		<Grid Grid.Column="1">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="0.5*"/>
-				<RowDefinition Height="3*"/>
-				<RowDefinition Height="*"/>
-			</Grid.RowDefinitions>
-			<ComboBox Grid.Row="0" Margin="0,15,0,0" HorizontalAlignment="Left" PlaceholderText="Select a player">
 
-			</ComboBox>
-			<Grid Grid.Row="1">
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="*"/>
-					<ColumnDefinition Width="*"/>
-					<ColumnDefinition Width="*"/>
-				</Grid.ColumnDefinitions>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="2*"/>
+			</Grid.ColumnDefinitions>
+
+			<StackPanel Grid.Column="0" Margin="5">
+				<Label Content="Scoreboard" Foreground="White" FontSize="18" HorizontalAlignment="Center"/>
+				<ListBox x:Name="ScoreBoardList" />
+			</StackPanel>
+
+			<Grid Grid.Column="1" Margin="400,100,0,0">
 				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
 					<RowDefinition Height="*"/>
-					<RowDefinition Height="12*"/>
+					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
-				<Label Grid.Row="0" Content="Wurf 1:"/>
-				<Label Grid.Row="0" Grid.Column="1" Content="Wurf 2:"/>
-				<Label Grid.Row="0" Grid.Column="2" Content="Wurf 3:"/>
-				<Label Grid.Row="1" Content="XX"/>
-				<Label Grid.Row="1" Grid.Column="1" Content="XX"/>
-				<Label Grid.Row="1" Grid.Column="2" Content="XX"/>
+
+				<StackPanel Grid.Row="0" Spacing="5" HorizontalAlignment="Center">
+					<Label Content="Spieler am Zug:" Foreground="White" FontSize="16"/>
+				</StackPanel>
+
+				<StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="50">
+					<Label x:Name="CurrentPlayerLabel" Content="Player" Foreground="White" FontSize="16"/>
+					<Label x:Name="ScoreLabel" Content="00" Foreground="White" FontSize="16"/>
+				</StackPanel>
+
+				<Grid Grid.Row="2" Margin="0,100,0,0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+
+					<Label Grid.Row="0" Content="Wurf 1:" Foreground="White"/>
+					<Label Grid.Row="0" Grid.Column="1" Content="Wurf 2:" Foreground="White"/>
+					<Label Grid.Row="0" Grid.Column="2" Content="Wurf 3:" Foreground="White"/>
+
+					<Label x:Name="Throw1Label" Grid.Row="1" Content="" Foreground="White"/>
+					<Label x:Name="Throw2Label" Grid.Row="1" Grid.Column="1" Content="" Foreground="White"/>
+					<Label x:Name="Throw3Label" Grid.Row="1" Grid.Column="2" Content="" Foreground="White"/>
+				</Grid>
+
+	
 			</Grid>
-			<Button x:Name="BtnReset" Grid.Row="2" Margin="0,0,0,10" VerticalAlignment="Bottom" Content="Zurücksetzen"/>
-			<Button Grid.Row="2" Margin="135,0,0,10" VerticalAlignment="Bottom" Content="Addieren"/>
 		</Grid>
-	</Grid>
+		</Grid>
 </UserControl>

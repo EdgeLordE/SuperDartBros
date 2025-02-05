@@ -5,13 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperDartBrosApp
+namespace SuperDartBrosApp.Models
 {
     public class Player
     {
         public string Name { get; set; }
         public int Score { get; set; }
-        public List<int> Points { get; set; }
+
+        public List<string> Points = new List<string>();
+
+        public bool IsBot { get; set; }
+
+        public bool IsTextBoxEnabled { get; set; } = true;
 
         public Player(string name, int score)
         {
@@ -27,14 +32,12 @@ namespace SuperDartBrosApp
             }
         }
 
-        public void AddPoint(int point)
-        {
-            Points.Add(point);
-        }
+     
 
         public void ResetPoints()
         {
             Points.Clear();
         }
+
     }
 }

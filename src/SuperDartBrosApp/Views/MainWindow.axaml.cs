@@ -1,6 +1,9 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Input;
+using Avalonia.Interactivity;
 using ReactiveUI;
+using SuperDartBrosApp.Models;
+using System.Collections.Generic;
 
 namespace SuperDartBrosApp.Views;
 
@@ -12,18 +15,19 @@ public partial class MainWindow : Window
         //Cursor = new Cursor(StandardCursorType.None); Für Raspberry Pi später ändern
     }
 
-    private void BtnStart_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    private void BtnStart_Click(object? sender, RoutedEventArgs e)
     {
-        bool failed = false;
-        if (string.IsNullOrWhiteSpace(TBPlayer1.Text) || string.IsNullOrWhiteSpace(TBPlayer2.Text))
+        if(string.IsNullOrWhiteSpace(TBPlayer1.Text) || string.IsNullOrWhiteSpace(TBPlayer2.Text))
         {
-            failed = true;
+            return;
         }
-        if (failed == false)
+        var players = new List<Player>
+
         {
-            UserControl userControl = new MainView();
-            Content = userControl;
-            // TODO: Spielernamen übergeben
-        }
+            new Player(TBPlayer1.Text, 0),
+            new Player(TBPlayer2.Text, 0)
+        };
+        var mainGameSettings = new GameSettings(players);
+        Content = mainGameSettings;
     }
 }
