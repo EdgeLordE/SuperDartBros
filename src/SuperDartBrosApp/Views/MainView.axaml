@@ -25,7 +25,7 @@
 
 
 
-			<Button Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265" ZIndex="2">
+			<Button x:Name="Bull25" Click="Bull25_Click" Width="70" Height="70" Background="Green" BorderThickness="0" Canvas.Left="365" Canvas.Top="265" ZIndex="2">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -34,7 +34,7 @@
 					</ControlTemplate>
 				</Button.Template>
 			</Button>
-			<Button Width="30" Height="30" Background="Red" BorderThickness="0" Canvas.Left="385" Canvas.Top="285" ZIndex="2">
+			<Button x:Name="BullE50" Click="BullE50_Click" Width="30" Height="30" Background="Red" BorderThickness="0" Canvas.Left="385" Canvas.Top="285" ZIndex="2">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -48,7 +48,7 @@
 
 			
 
-			<Button x:Name="ButtonDouble20" Background="Transparent">
+			<Button x:Name="ButtonDouble20" Click="D20_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -72,7 +72,7 @@
 			</Button>
 
 			
-			<Button x:Name="ButtonDouble1" Background="Transparent">
+			<Button x:Name="ButtonDouble1" Click="D1_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -98,7 +98,7 @@
 				</Button.RenderTransform>
 			</Button>
 
-			<Button x:Name="ButtonDouble18" Background="Transparent">
+			<Button x:Name="ButtonDouble18" Click="D18_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -125,7 +125,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble4" Background="Transparent">
+			<Button x:Name="ButtonDouble4" Click="D4_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -152,7 +152,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble13" Background="Transparent">
+			<Button x:Name="ButtonDouble13" Click="D13_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -179,7 +179,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble6" Background="Transparent">
+			<Button x:Name="ButtonDouble6" Click="D6_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -206,7 +206,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble10" Background="Transparent">
+			<Button x:Name="ButtonDouble10" Click="D10_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -233,7 +233,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble15" Background="Transparent">
+			<Button x:Name="ButtonDouble15" Click="D15_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -260,7 +260,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble2" Background="Transparent">
+			<Button x:Name="ButtonDouble2" Click="D2_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -287,7 +287,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble17" Background="Transparent">
+			<Button x:Name="ButtonDouble17" Click="D17_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -314,7 +314,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble3" Background="Transparent">
+			<Button x:Name="ButtonDouble3" Click="D3_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -341,7 +341,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble19" Background="Transparent">
+			<Button x:Name="ButtonDouble19" Click="D19_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -368,7 +368,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble7" Background="Transparent">
+			<Button x:Name="ButtonDouble7" Click="D7_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -395,7 +395,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble16" Background="Transparent">
+			<Button x:Name="ButtonDouble16" Click="D16_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -422,7 +422,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble8" Background="Transparent">
+			<Button x:Name="ButtonDouble8" Click="D8_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -449,7 +449,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble11" Background="Transparent">
+			<Button x:Name="ButtonDouble11" Click="D11_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -476,7 +476,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble14" Background="Transparent">
+			<Button x:Name="ButtonDouble14" Click="D14_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -503,7 +503,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble9" Background="Transparent">
+			<Button x:Name="ButtonDouble9" Click="D9_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -530,7 +530,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble12" Background="Transparent">
+			<Button x:Name="ButtonDouble12" Click="D12_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -557,7 +557,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonDouble5" Background="Transparent">
+			<Button x:Name="ButtonDouble5" Click="D5_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -582,43 +582,8 @@
 					<RotateTransform Angle="342" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-				
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-
-			
-
-			
-			
-			<Button x:Name="ButtonNormal1" Background="Transparent" BorderThickness="0">
+			<Button x:Name="ButtonNormal1" Click="S11_Click" Background="Transparent" BorderThickness="0">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -645,7 +610,7 @@
 				</Button.RenderTransform>
 			</Button>
 			
-			<Button x:Name="ButtonNormal20" Background="Transparent" BorderThickness="0">
+			<Button x:Name="ButtonNormal20" Click="S20_Click" Background="Transparent" BorderThickness="0">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -669,7 +634,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal18" Background="Transparent" BorderThickness="0" >
+			<Button x:Name="ButtonNormal18" Click="S18_Click" Background="Transparent" BorderThickness="0" >
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -697,7 +662,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal4" Background="Transparent">
+			<Button x:Name="ButtonNormal4" Click="S4_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -725,7 +690,7 @@
 			</Button>
 
 
-			<Button	x:Name="ButtonNormal13" Background="Transparent">
+			<Button	x:Name="ButtonNormal13" Click="S13_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -753,7 +718,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal6" Background="Transparent">
+			<Button x:Name="ButtonNormal6" Click="S6_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -781,7 +746,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal10" Background="Transparent">
+			<Button x:Name="ButtonNormal10" Click="S10_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -808,7 +773,7 @@
 				</Button.RenderTransform>
 			</Button>
 
-			<Button x:Name="ButtonNormal15" Background="Transparent">
+			<Button x:Name="ButtonNormal15" Click="S15_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -836,7 +801,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal2" Background="Transparent">
+			<Button x:Name="ButtonNormal2" Click="S2_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -864,7 +829,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal17" Background="Transparent">
+			<Button x:Name="ButtonNormal17" Click="S17_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -892,7 +857,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal3" Background="Transparent">
+			<Button x:Name="ButtonNormal3" Click="S3_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -920,7 +885,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal19" Background="Transparent">
+			<Button x:Name="ButtonNormal19" Click="S19_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -948,7 +913,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal7">
+			<Button x:Name="ButtonNormal7" Click="S7_Click">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -976,7 +941,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal16" Background="Transparent">
+			<Button x:Name="ButtonNormal16" Click="S16_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -1004,7 +969,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal8" Background="Transparent">
+			<Button x:Name="ButtonNormal8" Click="S8_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -1032,7 +997,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal11" Background="Transparent">
+			<Button x:Name="ButtonNormal11" Click="S11_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -1060,7 +1025,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal14" Background="Transparent">
+			<Button x:Name="ButtonNormal14" Click="S14_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -1088,7 +1053,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal9" Background="Transparent">
+			<Button x:Name="ButtonNormal9" Click="S9_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -1116,7 +1081,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal12" Background="Transparent">
+			<Button x:Name="ButtonNormal12" Click="S12_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -1144,7 +1109,7 @@
 			</Button>
 
 
-			<Button x:Name="ButtonNormal5" Background="Transparent">
+			<Button x:Name="ButtonNormal5" Click="S5_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
