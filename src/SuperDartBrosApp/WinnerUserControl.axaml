@@ -1,0 +1,13 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SuperDartBrosApp.WinnerUserControl"
+			 Background="DarkCyan">
+
+	<StackPanel Background="Black" VerticalAlignment="Center" HorizontalAlignment="Center">
+		<Label x:Name="LblWinner" Foreground="WhiteSmoke" Content="Spieler hat Gewonnen!"/>
+		<Button x:Name="BtnNewGame" HorizontalAlignment="Center" Background="White" Content="Neues Spiel starten" Click="BtnNewGame_Click"/>
+	</StackPanel>
+</UserControl>
