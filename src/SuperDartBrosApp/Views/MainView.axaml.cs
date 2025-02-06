@@ -122,104 +122,104 @@ namespace SuperDartBrosApp.Views
             // Logik für BullE50
         }
 
-        private void D1_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T1_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(1);
+            TripleClick(1);
         }
 
-        private void D2_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T2_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(2);
+            TripleClick(2);
         }
 
-        private void D3_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T3_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(3);
+            TripleClick(3);
         }
 
-        private void D4_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T4_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(4);
+            TripleClick(4);
         }
 
-        private void D5_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T5_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(5);
+            TripleClick(5);
         }
 
-        private void D6_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T6_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(6);
+            TripleClick(6);
         }
 
-        private void D7_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T7_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(7);
+            TripleClick(7);
         }
 
-        private void D8_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T8_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(8);
+            TripleClick(8);
         }
 
-        private void D9_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T9_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(9);
+            TripleClick(9);
         }
 
-        private void D10_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T10_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(10);
+            TripleClick(10);
         }
 
-        private void D11_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T11_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(11);
+            TripleClick(11);
         }
 
-        private void D12_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T12_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(12);
+            TripleClick(12);
         }
 
-        private void D13_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T13_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(13);
+            TripleClick(13);
         }
 
-        private void D14_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T14_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(14);
+            TripleClick(14);
         }
 
-        private void D15_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T15_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(15);
+            TripleClick(15);
         }
 
-        private void D16_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T16_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(16);
+            TripleClick(16);
         }
 
-        private void D17_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T17_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(17);
+            TripleClick(17);
         }
 
-        private void D18_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T18_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(18);
+            TripleClick(18);
         }
 
-        private void D19_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T19_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(19);
+            TripleClick(19);
         }
 
-        private void D20_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void T20_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            DoubleClick(20);
+            TripleClick(20);
         }
 
 
@@ -325,8 +325,110 @@ namespace SuperDartBrosApp.Views
             StandardClick(20);
         }
 
-       
+        // Double-Click-Events
+
+        private void D1_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(1);
         }
-     #endregion
+
+        private void D2_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(2);
+        }
+
+        private void D3_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(3);
+        }
+
+        private void D4_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(4);
+        }
+
+        private void D5_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(5);
+        }
+
+        private void D6_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(6);
+        }
+
+        private void D7_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(7);
+        }
+
+        private void D8_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(8);
+        }
+
+        private void D9_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(9);
+        }
+
+        private void D10_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(10);
+        }
+
+        private void D11_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(11);
+        }
+
+        private void D12_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(12);
+        }
+
+        private void D13_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(13);
+        }
+
+        private void D14_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(14);
+        }
+
+        private void D15_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(15);
+        }
+
+        private void D16_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(16);
+        }
+
+        private void D17_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(17);
+        }
+
+        private void D18_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(18);
+        }
+
+        private void D19_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(19);
+        }
+
+        private void D20_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            DoubleClick(20);
+        }
+
+
+    }
+    #endregion
 
 }

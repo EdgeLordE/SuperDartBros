@@ -51,10 +51,7 @@
 					</ControlTemplate>
 				</Button.Template>
 			</Button>
-
-
-
-			<Button x:Name="ButtonTriple20" Background="Transparent" ZIndex="2">
+			<Button x:Name="ButtonTriple20" Click="T20_Click" Background="Transparent" ZIndex="2">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -78,9 +75,7 @@
 					</ControlTemplate>
 				</Button.Template>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple1" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple1" Click="T1_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -107,9 +102,7 @@
 					<RotateTransform Angle="18" CenterX="190" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple18" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple18" Click="T18_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -136,9 +129,7 @@
 					<RotateTransform Angle="36" CenterX="190" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple4" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple4" Click="T4_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -165,9 +156,7 @@
 					<RotateTransform Angle="54" CenterX="190" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple13" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple13" Click="T13_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -194,8 +183,7 @@
 					<RotateTransform Angle="72" CenterX="190" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-			<Button x:Name="ButtonTriple6" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple6" Click="T6_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -222,9 +210,7 @@
 					<RotateTransform Angle="90" CenterX="190" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple10" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple10" Click="T10_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -251,9 +237,7 @@
 					<RotateTransform Angle="108" CenterX="190" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple15" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple15" Click="T15_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -280,9 +264,7 @@
 					<RotateTransform Angle="126" CenterX="189.8" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple2" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple2" Click="T2_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -309,9 +291,7 @@
 					<RotateTransform Angle="144" CenterX="189.8" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple17" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple17" Click="T17_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -338,9 +318,7 @@
 					<RotateTransform Angle="162" CenterX="189.8" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple3" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple3" Click="T3_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -367,9 +345,7 @@
 					<RotateTransform Angle="180" CenterX="189.8" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple19" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple19" Click="T19_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -396,9 +372,7 @@
 					<RotateTransform Angle="198" CenterX="189.8" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple7" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple7" Click="T7_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -425,9 +399,7 @@
 					<RotateTransform Angle="216" CenterX="189.8" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple16" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple16" Click="T16_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -454,9 +426,7 @@
 					<RotateTransform Angle="234" CenterX="189.8" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple8" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple8" Click="T18_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -483,9 +453,7 @@
 					<RotateTransform Angle="252" CenterX="189.8" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple14" Background="Transparent" ZIndex="2">
+			<Button x:Name="ButtonTriple14" Click="T4_Click" Background="Transparent" ZIndex="2">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -512,9 +480,7 @@
 					<RotateTransform Angle="288" CenterX="190" CenterY="200" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple11" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple11" Click="T11_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -541,10 +507,7 @@
 					<RotateTransform Angle="270" CenterX="189.8" CenterY="199" />
 				</Button.RenderTransform>
 			</Button>
-
-
-
-			<Button x:Name="ButtonTriple9" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple9" Click="T9_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -571,9 +534,7 @@
 					<RotateTransform Angle="306" CenterX="190" CenterY="200" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple12" Background="Transparent" ZIndex="1">
+			<Button x:Name="ButtonTriple12" Click="T12_Click" Background="Transparent" ZIndex="1">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -600,9 +561,7 @@
 					<RotateTransform Angle="324" CenterX="190" CenterY="200" />
 				</Button.RenderTransform>
 			</Button>
-
-
-			<Button x:Name="ButtonTriple5" Background="Transparent" ZIndex="2">
+			<Button x:Name="ButtonTriple5" Click="T5_Click" Background="Transparent" ZIndex="2">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -629,10 +588,6 @@
 					<RotateTransform Angle="342" CenterX="190" CenterY="200" />
 				</Button.RenderTransform>
 			</Button>
-			
-
-			
-
 			<Button x:Name="ButtonDouble20" Click="D20_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -655,8 +610,6 @@
 					</ControlTemplate>
 				</Button.Template>
 			</Button>
-
-			
 			<Button x:Name="ButtonDouble1" Click="D1_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -682,7 +635,6 @@
 					<RotateTransform Angle="18" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
 			<Button x:Name="ButtonDouble18" Click="D18_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -708,8 +660,6 @@
 					<RotateTransform Angle="36" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble4" Click="D4_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -735,8 +685,6 @@
 					<RotateTransform Angle="54" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble13" Click="D13_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -762,8 +710,6 @@
 					<RotateTransform Angle="72" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble6" Click="D6_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -789,8 +735,6 @@
 					<RotateTransform Angle="90" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble10" Click="D10_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -816,8 +760,6 @@
 					<RotateTransform Angle="108" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble15" Click="D15_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -843,8 +785,6 @@
 					<RotateTransform Angle="126" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble2" Click="D2_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -870,8 +810,6 @@
 					<RotateTransform Angle="144" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble17" Click="D17_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -897,8 +835,6 @@
 					<RotateTransform Angle="162" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble3" Click="D3_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -924,8 +860,6 @@
 					<RotateTransform Angle="180" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble19" Click="D19_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -951,8 +885,6 @@
 					<RotateTransform Angle="198" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble7" Click="D7_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -978,8 +910,6 @@
 					<RotateTransform Angle="216" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble16" Click="D16_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1005,8 +935,6 @@
 					<RotateTransform Angle="234" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble8" Click="D8_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1032,8 +960,6 @@
 					<RotateTransform Angle="252" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble11" Click="D11_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1059,8 +985,6 @@
 					<RotateTransform Angle="270" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble14" Click="D14_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1086,8 +1010,6 @@
 					<RotateTransform Angle="288" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble9" Click="D9_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1113,8 +1035,6 @@
 					<RotateTransform Angle="306" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble12" Click="D12_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1140,8 +1060,6 @@
 					<RotateTransform Angle="324" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonDouble5" Click="D5_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1166,9 +1084,8 @@
 				<Button.RenderTransform>
 					<RotateTransform Angle="342" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
-			</Button>
-			
-			<Button x:Name="ButtonNormal1" Click="S11_Click" Background="Transparent" BorderThickness="0">
+			</Button>	
+			<Button x:Name="ButtonNormal1" Click="S1_Click" Background="Transparent" BorderThickness="0">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>
@@ -1194,7 +1111,6 @@
 					<RotateTransform Angle="18" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-			
 			<Button x:Name="ButtonNormal20" Click="S20_Click" Background="Transparent" BorderThickness="0">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1217,8 +1133,6 @@
 					</ControlTemplate>
 				</Button.Template>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal18" Click="S18_Click" Background="Transparent" BorderThickness="0" >
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1245,8 +1159,6 @@
 					<RotateTransform Angle="36" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal4" Click="S4_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1273,8 +1185,6 @@
 					<RotateTransform Angle="54" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button	x:Name="ButtonNormal13" Click="S13_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1301,8 +1211,6 @@
 					<RotateTransform Angle="72" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal6" Click="S6_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1329,8 +1237,6 @@
 					<RotateTransform Angle="90" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal10" Click="S10_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1357,7 +1263,6 @@
 					<RotateTransform Angle="108" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
 			<Button x:Name="ButtonNormal15" Click="S15_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1384,8 +1289,6 @@
 					<RotateTransform Angle="126" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal2" Click="S2_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1412,8 +1315,6 @@
 					<RotateTransform Angle="144" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal17" Click="S17_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1440,8 +1341,6 @@
 					<RotateTransform Angle="162" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal3" Click="S3_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1468,8 +1367,6 @@
 					<RotateTransform Angle="180" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal19" Click="S19_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1496,8 +1393,6 @@
 					<RotateTransform Angle="198" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal7" Click="S7_Click">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1524,8 +1419,6 @@
 					<RotateTransform Angle="216" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal16" Click="S16_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1552,8 +1445,6 @@
 					<RotateTransform Angle="234" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal8" Click="S8_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1580,8 +1471,6 @@
 					<RotateTransform Angle="252" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal11" Click="S11_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1608,8 +1497,6 @@
 					<RotateTransform Angle="270" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal14" Click="S14_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1636,8 +1523,6 @@
 					<RotateTransform Angle="288" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal9" Click="S9_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1664,8 +1549,6 @@
 					<RotateTransform Angle="306" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal12" Click="S12_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1692,8 +1575,6 @@
 					<RotateTransform Angle="324" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
 			</Button>
-
-
 			<Button x:Name="ButtonNormal5" Click="S5_Click" Background="Transparent">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1712,7 +1593,7 @@
 									</PathGeometry>
 								</Path.Data>
 							</Path>
-						</Grid>
+						</Grid>	
 					</ControlTemplate>
 
 				</Button.Template>
@@ -1730,54 +1611,50 @@
 
 		<Grid>
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*"/>
-				<ColumnDefinition Width="2*"/>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
 
-			<StackPanel Grid.Column="0" Margin="5">
-				<Label Content="Scoreboard" Foreground="White" FontSize="18" HorizontalAlignment="Center"/>
-				<ListBox x:Name="ScoreBoardList" />
-			</StackPanel>
+			<StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20" Spacing="20">
 
-			<Grid Grid.Column="1" Margin="400,100,0,0">
-				<Grid.RowDefinitions>
-					<RowDefinition Height="Auto"/>
-					<RowDefinition Height="Auto"/>
-					<RowDefinition Height="*"/>
-					<RowDefinition Height="Auto"/>
-				</Grid.RowDefinitions>
-
-				<StackPanel Grid.Row="0" Spacing="5" HorizontalAlignment="Center">
-					<Label Content="Spieler am Zug:" Foreground="White" FontSize="16"/>
+				<StackPanel Background="Black">
+					<Label Content="Scoreboard" Foreground="White" FontSize="18" HorizontalAlignment="Center"/>
+					<ListBox x:Name="ScoreBoardList" Width="200"/>
 				</StackPanel>
 
-				<StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="50">
-					<Label x:Name="CurrentPlayerLabel" Content="Player" Foreground="White" FontSize="16"/>
-					<Label x:Name="ScoreLabel" Content="00" Foreground="White" FontSize="16"/>
+				<StackPanel Spacing="10" Background="Black">
+					<StackPanel Orientation="Horizontal">
+						<Label Content="Spieler am Zug:" Foreground="White" FontSize="16" />
+						<Label x:Name="CurrentPlayerLabel" Content="Player" Foreground="White" FontSize="16" Margin="5,0,0,0"/>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<Label Content="Score:" Foreground="White" FontSize="16"/>
+						<Label x:Name="ScoreLabel" Content="501" Foreground="White" FontSize="16" Margin="5,0,0,0"/>
+					</StackPanel>
 				</StackPanel>
 
-				<Grid Grid.Row="2" Margin="0,100,0,0">
+				<Grid Background="Black">
 					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="*"/>
-						<ColumnDefinition Width="*"/>
-						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
 					</Grid.ColumnDefinitions>
 					<Grid.RowDefinitions>
 						<RowDefinition Height="Auto"/>
 						<RowDefinition Height="Auto"/>
 					</Grid.RowDefinitions>
 
-					<Label Grid.Row="0" Content="Wurf 1:" Foreground="White"/>
-					<Label Grid.Row="0" Grid.Column="1" Content="Wurf 2:" Foreground="White"/>
-					<Label Grid.Row="0" Grid.Column="2" Content="Wurf 3:" Foreground="White"/>
+					<Label Grid.Row="0" Grid.Column="0" Content="Wurf 1:" Foreground="White" Margin="5"/>
+					<Label Grid.Row="0" Grid.Column="1" Content="Wurf 2:" Foreground="White" Margin="5"/>
+					<Label Grid.Row="0" Grid.Column="2" Content="Wurf 3:" Foreground="White" Margin="5"/>
 
-					<Label x:Name="Throw1Label" Grid.Row="1" Content="" Foreground="White"/>
-					<Label x:Name="Throw2Label" Grid.Row="1" Grid.Column="1" Content="" Foreground="White"/>
-					<Label x:Name="Throw3Label" Grid.Row="1" Grid.Column="2" Content="" Foreground="White"/>
+					<Label x:Name="Throw1Label" Grid.Row="1" Grid.Column="0" Content=" " Foreground="White" Margin="5"/>
+					<Label x:Name="Throw2Label" Grid.Row="1" Grid.Column="1" Content=" " Foreground="White" Margin="5"/>
+					<Label x:Name="Throw3Label" Grid.Row="1" Grid.Column="2" Content=" " Foreground="White" Margin="5"/>
 				</Grid>
 
-	
-			</Grid>
+			</StackPanel>
 		</Grid>
-		</Grid>
+
+	</Grid>
 </UserControl>
