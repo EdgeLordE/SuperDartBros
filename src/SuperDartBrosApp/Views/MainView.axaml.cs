@@ -113,7 +113,15 @@ namespace SuperDartBrosApp.Views
             RegisterThrow(value * 3);
         }
     
+        private void BtnReset_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
 
+        }
+
+        private void BtnConfirm_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            
+        }
 
 
 #region buttons
