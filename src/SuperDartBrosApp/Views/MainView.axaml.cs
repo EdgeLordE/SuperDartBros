@@ -79,7 +79,7 @@ namespace SuperDartBrosApp.Views
 
         public void SwitchPlayer()
         {
-            if (players.Any(p => p.Score <= 0))
+            if (players.Any(p => p.Score == 0))
             {
                 WinnerUserControl winnerUserControl = new WinnerUserControl();
                 winnerUserControl.LblWinner.Content = $"{players[currentPlayerIndex].Name} hat gewonnen!";
