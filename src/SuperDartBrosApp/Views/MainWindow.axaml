@@ -3,39 +3,11 @@
         xmlns:vm="using:SuperDartBrosApp.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:views="clr-namespace:SuperDartBrosApp.Views"
+        xmlns:views="clr-namespace:SuperDartBrosApp"
         mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
         x:Class="SuperDartBrosApp.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="Super Dart Bros">
+	<views:InputNamesUserControl/>
 
-	<Grid Background="#2E3B4E">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="*"/>
-		</Grid.RowDefinitions>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="*"/>
-		</Grid.ColumnDefinitions>
-
-		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-			<TextBlock Text="Super Dart Bros" FontSize="36" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,30,0,10"/>
-			<TextBlock Text="Willkommen zum Super Dart Bros Dartzähler!" Foreground="White" HorizontalAlignment="Center" FontSize="18"/>
-			<TextBlock Text="Bitte geben Sie die Spielernamen ein, um das Spiel zu beginnen." Foreground="White" HorizontalAlignment="Center" FontSize="16"/>
-
-			<Border HorizontalAlignment="Center" Margin="0,15,0,0" Width="320" Background="#3F4E63" CornerRadius="10" Padding="20">
-				<StackPanel>
-					<StackPanel Orientation="Vertical" Margin="0,5,0,5">
-						<TextBlock Text="Spieler 1:" Foreground="White" VerticalAlignment="Center" Margin="0,0,0,5"/>
-						<TextBox x:Name="TBPlayer1" Text="Spieler1"  Width="250" HorizontalAlignment="Center"/>
-					</StackPanel>
-					<StackPanel Orientation="Vertical" Margin="0,5,0,5">
-						<TextBlock Text="Spieler 2:" Foreground="White" VerticalAlignment="Center" Margin="0,0,0,5"/>
-						<TextBox x:Name="TBPlayer2" Text="Spieler2" Width="250" HorizontalAlignment="Center"/>
-					</StackPanel>
-				</StackPanel>
-			</Border>
-
-			<Button x:Name="BtnStart" Content="Spiel starten!" HorizontalAlignment="Center" Margin="0,30,0,0" Padding="15,7" FontSize="16" Background="#FF8C00" Foreground="White" BorderThickness="0" CornerRadius="5" Click="BtnStart_Click"/>
-		</StackPanel>
-	</Grid>
 </Window>
