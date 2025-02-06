@@ -11,6 +11,7 @@ namespace SuperDartBrosApp.Views
         public string CurrentPlayer { get; private set; }
 
         private List<Player> players;
+        private List<string> settings;
         private int currentPlayerIndex = 0;
         private int throwCount = 0;
 
@@ -20,6 +21,7 @@ namespace SuperDartBrosApp.Views
         {
             InitializeComponent();  
             players = gameSettings.Players.ToList();
+            settings = gameSettings.settingsList.ToList();
 
             foreach(var player in players)
             {
@@ -56,25 +58,25 @@ namespace SuperDartBrosApp.Views
 
             var scoreBoardList = this.FindControl<ListBox>("ScoreBoardList");
             var scoreItems = players.Select(p => $"{p.Name}: {p.Score}").ToList();
-            scoreBoardList.ItemsSource = scoreItems;  
+            scoreBoardList.ItemsSource = scoreItems;
         }
 
-        public void RegisterThrow(int points)
+        public void RegisterThrow(string yarrak, int point)
         {
-            var currentPlayerObj = players[currentPlayerIndex];
+            Player currentPlayerObj = players[currentPlayerIndex];
 
-            playerThrows[currentPlayerObj].Add(points);
-            currentPlayerObj.Score -= points;
+            if (yarrak == "" && point == 0 || throwCount >= 3)
+            {
+                playerThrows[currentPlayerObj].Add(Player.PointToScore($"{yarrak}{point}"));
+            }
+            else
+            {
+                playerThrows[currentPlayerObj].Add(Player.PointToScore($"{yarrak}{point}"));
+                currentPlayerObj.Add($"{yarrak}{point}");
+            }
 
             throwCount++;
             UpdateUI();
-
-            if(throwCount >= 3)
-            {
-                playerThrows[currentPlayerObj].Clear();
-                throwCount = 0;
-                SwitchPlayer();
-            }
         }
 
         public void SwitchPlayer()
@@ -90,50 +92,71 @@ namespace SuperDartBrosApp.Views
             UpdateUI();
         }
 
-
-
-
-        public void OnThrowCompleted()
+        private void OutClick()
         {
-            RegisterThrow(0); 
+            RegisterThrow("", 0); 
         }
 
         private void StandardClick(int value)
         {
-            RegisterThrow(value);
+            RegisterThrow("S", value);
         }
 
         private void DoubleClick(int value)
         {
-            RegisterThrow(value * 2);
+            RegisterThrow("D", value);
         }
 
         private void TripleClick(int value)
         {
-            RegisterThrow(value * 3);
+            RegisterThrow("T", value);
+        }
+
+        private void BullClick(int value)
+        {
+            RegisterThrow("B", value);
         }
     
         private void BtnReset_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
+            playerThrows[players[currentPlayerIndex]].Clear();
+            throwCount = 0;
+            UpdateUI();
+            players[currentPlayerIndex].ResetPoints();
 
         }
 
         private void BtnConfirm_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            
+            if (throwCount >= 3)
+            {
+                Player currentPlayerObj = players[currentPlayerIndex];
+                playerThrows[currentPlayerObj].Clear();
+                throwCount = 0;
+                SwitchPlayer();
+                if (settings[1] == "X01")
+                {
+                    X01.PlayRound(currentPlayerObj, settings[3]);
+                }
+                currentPlayerObj.ResetPoints();
+            }
         }
 
 
-#region buttons
+        #region Dartboard-Buttons
+        private void BtnOut_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            OutClick();
+        }
 
         private void Bull25_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            // Logik für Bull25
+            BullClick(25);
         }
 
         private void BullE50_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            // Logik für BullE50
+            BullClick(50);
         }
 
         private void T1_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)

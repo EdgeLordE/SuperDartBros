@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,10 +10,39 @@ namespace SuperDartBrosApp.Models
 {
     public class Player
     {
+        private List<int> pointsInNum = new List<int>();
+
         public string Name { get; set; }
         public int Score { get; set; }
 
         public List<string> Points = new List<string>();
+
+        public List<int> PointsInNum
+        {
+            get
+            {
+                for (int i = 0; i < Points.Count; i++)
+                {
+                    if (Points[i].Contains("S"))
+                    {
+                        pointsInNum.Add(int.Parse(Points[i].Trim('S')));
+                    }
+                    else if (Points[i].Contains("D"))
+                    {
+                        pointsInNum.Add(int.Parse(Points[i].Trim('D')) * 2);
+                    }
+                    else if (Points[i].Contains("T"))
+                    {
+                        pointsInNum.Add(int.Parse(Points[i].Trim('T')) * 3);
+                    }
+                    else if (Points[i].Contains("B"))
+                    {
+                        pointsInNum.Add(int.Parse(Points[i].Trim('B')));
+                    }
+                }
+                return pointsInNum;
+            }
+        }
 
         public bool IsBot { get; set; }
 
@@ -24,19 +54,36 @@ namespace SuperDartBrosApp.Models
             Score = score;
         }   
 
-        public void SubtractScore(int points)
+        public static int PointToScore(string point)
         {
-            if (Score - points >= 0)
+            if (point.Contains("S"))
             {
-                Score -= points;
+                return int.Parse(point.Trim('S'));
             }
+            else if (point.Contains("D"))
+            {
+                return int.Parse(point.Trim('D')) * 2;
+            }
+            else if (point.Contains("T"))
+            {
+                return int.Parse(point.Trim('T')) * 3;
+            }
+            else if (point.Contains("B"))
+            {
+                return int.Parse(point.Trim('B'));
+            }
+            return 0;
         }
 
-     
+        public void Add(string points)
+        {
+            Points.Add(points);
+        }
 
         public void ResetPoints()
         {
             Points.Clear();
+            pointsInNum.Clear();
         }
 
     }

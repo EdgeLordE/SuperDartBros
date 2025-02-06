@@ -16,13 +16,10 @@ namespace SuperDartBrosApp
         private int startPoints;
         private IEnumerable<Player> players;
 
-        public Check_Outs CheckOut { get; set; }
 
-
-        public X01(int startPoints, Check_Outs check_Outs)
+        public X01(int startPoints)
         {
             this.startPoints = startPoints;
-            CheckOut = check_Outs;
         }
 
         public void InitializeMode(IEnumerable<Player> players)
@@ -34,15 +31,11 @@ namespace SuperDartBrosApp
             }
         }
 
-        public void PlayRound(Player player)
+        public static void PlayRound(Player player, string check_out)
         {
-            List<int> pointsInNum = new List<int>();
-            for (int i = 0; i < player.Points.Count; i++)
-            {
-                pointsInNum.Add(int.Parse(player.Points[i].Trim(['B', 'D', 'S'])));
-            }
+            List<int> pointsInNum = player.PointsInNum;
 
-            if (CheckOut is Check_Outs.StraightOut)
+            if (check_out == "Straight Out")
             {
                 if (player.Score - pointsInNum.Sum() >= 0)
                 {
@@ -50,7 +43,7 @@ namespace SuperDartBrosApp
                     player.ResetPoints();
                 }
             }
-            else if (CheckOut is Check_Outs.DoubleOut)
+            else if (check_out == "Double Out")
             {
                 if (player.Score - pointsInNum.Sum() == 0 && player.Points.Last().Contains("D"))
                 {
@@ -58,7 +51,7 @@ namespace SuperDartBrosApp
                     player.ResetPoints();
                 }
             }
-            else if (CheckOut is Check_Outs.TripleOut)
+            else if (check_out == "Triple Out")
             {
                 if (player.Score - pointsInNum.Sum() == 0 && player.Points.Last().Contains("T"))
                 {
@@ -66,7 +59,7 @@ namespace SuperDartBrosApp
                     player.ResetPoints();
                 }
             }
-            else if (CheckOut is Check_Outs.MasterOut)
+            else if (check_out == "Master Out")
             {
                 if (player.Score - pointsInNum.Sum() == 0 && player.Points.Last().Contains("B"))
                 {

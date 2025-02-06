@@ -20,7 +20,7 @@
 
 
 		<Canvas x:Name="CanvasDart" Height="600" Width="800">
-			<Button Width="526" Height="526" Background="Transparent" BorderThickness="0" Canvas.Left="137" Canvas.Top="37" >
+			<Button x:Name="BtnOut" Click="BtnOut_Click" Width="526" Height="526" Background="Transparent" BorderThickness="0" Canvas.Left="137" Canvas.Top="37" >
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
 						<Grid>

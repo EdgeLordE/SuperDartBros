@@ -14,6 +14,7 @@ namespace SuperDartBrosApp
     public partial class GameSettings : UserControl
     {
         public ObservableCollection<Player> Players { get; } = new ObservableCollection<Player>();
+        public List<string> settingsList = new List<string>();
 
         public GameSettings(IEnumerable<Player> players)
         {
@@ -47,12 +48,12 @@ namespace SuperDartBrosApp
             //var legsComboBox = this.FindControl<ComboBox>("LegsComboBox");
             //string legs = (legsComboBox?.SelectedItem as ComboBoxItem)?.Content?.ToString() ?? "Nicht ausgewählt";
 
-            var settingsList = new List<string>
+            settingsList = new List<string>
             {
                 $"Zufällige Reihenfolge: {randomOrder}",
-                $"Spielmodus: {gameMode}",
-                $"Startpunkte: {startPoints}",
-                $"Check-Out: {checkOut}",
+                gameMode,
+                startPoints,
+                checkOut,
                 "Spieler:"
             };
 
