@@ -22,7 +22,7 @@ namespace SuperDartBrosApp.Models
         {
             Name = name;
             Score = score;
-        }
+        }   
 
         public void SubtractScore(int points)
         {
