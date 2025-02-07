@@ -12,6 +12,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        //Cursor = new Cursor(StandardCursorType.None); Für Raspberry Pi später ändern
+        Cursor = new Cursor(StandardCursorType.None);
+        this.WindowState = WindowState.FullScreen;
     }
 }
