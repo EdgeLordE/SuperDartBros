@@ -21,6 +21,7 @@ namespace SuperDartBrosApp.Models
         {
             get
             {
+                pointsInNum.Clear();
                 for (int i = 0; i < Points.Count; i++)
                 {
                     if (Points[i].Contains("S"))
