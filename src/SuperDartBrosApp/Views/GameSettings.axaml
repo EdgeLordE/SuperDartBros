@@ -26,10 +26,11 @@
 							</DataTemplate>
 						</ListBox.ItemTemplate>
 					</ListBox>
-					<TextBlock Text="Klicke auf 'Spieler hinzufügen' oder auf 'Computer hinzufügen'." Foreground="Gray"/>
+					<TextBlock Text="Klicke auf 'Spieler hinzufügen'." Foreground="Gray"/>
 					<StackPanel Orientation="Horizontal" Spacing="10">
 						<Button x:Name="AddPlayerButton" Content="Spieler hinzufügen" Foreground="White" Click="AddPlayer_Click"/>
-						<Button x:Name="AddBotButton" Content="Bot hinzufügen" Foreground="White" Click="AddBot_Click"/>
+						<!--						<Button x:Name="AddBotButton" Content="Bot hinzufügen" Foreground="White" Click="AddBot_Click"/>
+-->
 					</StackPanel>
 				</StackPanel>
 			</Border>
@@ -41,15 +42,15 @@
 					<TextBlock Text="Spielmodus" Foreground="White"/>
 					<ComboBox x:Name="GameModeComboBox" SelectedIndex="0">
 						<ComboBoxItem Content="X01"/>
-						<ComboBoxItem Content="Highscore"/>
+<!--<ComboBoxItem Content="Highscore"/>
 						<ComboBoxItem Content="Around The Clock"/>
-						<ComboBoxItem Content="Shoot by Numbers"/>
+						<ComboBoxItem Content="Shoot by Numbers"/>-->
 					</ComboBox>
 					</StackPanel>
 
 					<StackPanel Spacing="5">
 						<TextBlock Text="Startpunkte" Foreground="White"/>
-						<ComboBox x:Name="StartPointsComboBox" SelectedIndex="2">
+						<ComboBox x:Name="StartPointsComboBox" SelectedIndex="1">
 							<ComboBoxItem Content="101"/>
 							<ComboBoxItem Content="301"/>
 							<ComboBoxItem Content="501"/>

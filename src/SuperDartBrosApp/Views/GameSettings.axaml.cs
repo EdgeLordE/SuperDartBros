@@ -140,7 +140,7 @@ namespace SuperDartBrosApp
 
                 if(Players.Count == 2)
                 {
-                    AddBotButton.IsEnabled = false;
+                    //AddBotButton.IsEnabled = false;
                 }
                 CheckPlayersCount();
             }
@@ -164,7 +164,7 @@ namespace SuperDartBrosApp
         private void CheckPlayersCount()
         {
             AddPlayerButton.IsEnabled = Players.Count < 2;
-            AddBotButton.IsEnabled = Players.Count < 2;
+            //AddBotButton.IsEnabled = Players.Count < 2;
         }
         private void SetPlayerScoreToStartPoints()
         {
