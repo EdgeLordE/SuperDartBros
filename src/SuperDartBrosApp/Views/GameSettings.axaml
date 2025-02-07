@@ -57,7 +57,6 @@
 							<ComboBoxItem Content="701"/>
 							<ComboBoxItem Content="901"/>
 							<ComboBoxItem Content="1001"/>
-							<ComboBoxItem Content="Individuell"/>
 						</ComboBox>
 					</StackPanel>
 					<StackPanel Spacing="5">
@@ -125,8 +124,7 @@
 				</StackPanel>
 			</Border>
 
-			<TextBlock Text="Erweiterte Optionen" Foreground="#7aa9ff" HorizontalAlignment="Center"/>
-			<Button Content="Spiel starten" x:Name="BtnStart" Click="BtnStart_Click" HorizontalAlignment="Center" Background="#FF8C00" Foreground="White" Padding="10" Width="200"/>
+			<Button Content="Spiel starten" HorizontalContentAlignment="Center" x:Name="BtnStart" Click="BtnStart_Click" HorizontalAlignment="Center" Background="#FF8C00" Foreground="White" Padding="10" Width="200"/>
 		</StackPanel>
 	</Grid>
 </UserControl>

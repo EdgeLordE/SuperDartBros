@@ -5,7 +5,8 @@
              xmlns:vm="clr-namespace:SuperDartBrosApp.ViewModels"
              mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
              x:Class="SuperDartBrosApp.Views.MainView"
-             x:DataType="vm:MainViewModel">
+             x:DataType="vm:MainViewModel"
+			 Padding="-50,0,0,0">
 	<Design.DataContext>
 		<!-- This only sets the DataContext for the previewer in an IDE,
          to set the actualDataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
@@ -1084,7 +1085,7 @@
 				<Button.RenderTransform>
 					<RotateTransform Angle="342" CenterX="183" CenterY="150" />
 				</Button.RenderTransform>
-			</Button>	
+			</Button>
 			<Button x:Name="ButtonNormal1" Click="S1_Click" Background="Transparent" BorderThickness="0">
 				<Button.Template>
 					<ControlTemplate TargetType="Button">
@@ -1105,7 +1106,7 @@
 							</Path>
 						</Grid>
 					</ControlTemplate>
-					
+
 				</Button.Template>
 				<Button.RenderTransform>
 					<RotateTransform Angle="18" CenterX="183" CenterY="150" />
@@ -1593,7 +1594,7 @@
 									</PathGeometry>
 								</Path.Data>
 							</Path>
-						</Grid>	
+						</Grid>
 					</ControlTemplate>
 
 				</Button.Template>
@@ -1603,10 +1604,10 @@
 			</Button>
 
 
-			
-			
-			
-			
+
+
+
+
 		</Canvas>
 		<StackPanel Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Spacing="20">
 
@@ -1620,7 +1621,7 @@
 					<Label Margin="7" Content="Spieler am Zug:" Foreground="White" FontSize="16" />
 					<Label Margin="7" x:Name="CurrentPlayerLabel" Content="Player" Foreground="White" FontSize="16"/>
 				</StackPanel>
-			<StackPanel Orientation="Horizontal">
+				<StackPanel Orientation="Horizontal">
 					<Label Margin="7" Content="Score:" Foreground="White" FontSize="16"/>
 					<Label Margin="7" x:Name="ScoreLabel" Content="501" Foreground="White" FontSize="16"/>
 				</StackPanel>

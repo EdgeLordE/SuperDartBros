@@ -20,13 +20,25 @@ namespace SuperDartBrosApp
         {
             InitializeComponent();
 
-            foreach(var player in players)
+
+            foreach (var player in players)
             {
                 Players.Add(player);
             }
 
             DataContext = this;
             CheckPlayersCount();
+        }
+        public void GetRandomPlayer()
+        {
+            var random = new Random();
+            var randomOrder = random.Next(0, 2);
+            if(randomOrder == 1)
+            {
+                var temp = Players[0];
+                Players[0] = Players[1];
+                Players[1] = temp;
+            }
         }
 
         private void BtnStart_Click(object? sender, RoutedEventArgs e)
@@ -84,6 +96,10 @@ namespace SuperDartBrosApp
             };
             SetPlayerScoreToStartPoints();
 
+            if(RandomOrderCheckBox.IsChecked == true)
+            {
+                GetRandomPlayer();
+            }   
             var mainview = new MainView(this);
             Content = mainview;
             //settingsWindow.Show();
