@@ -59,13 +59,6 @@ namespace SuperDartBrosApp.Views
             var scoreBoardList = this.FindControl<ListBox>("ScoreBoardList");
             var scoreItems = players.Select(p => $"{p.Name}: {p.Score}").ToList();
             scoreBoardList.ItemsSource = scoreItems;
-
-            if(players.Any(p => p.Score == 0))
-            {
-                WinnerUserControl winnerUserControl = new WinnerUserControl();
-                winnerUserControl.LblWinner.Content = $"{players[currentPlayerIndex].Name} hat gewonnen!";
-                Content = winnerUserControl;
-            }
         }
 
         public void RegisterThrow(string yarrak, int point)
@@ -88,7 +81,6 @@ namespace SuperDartBrosApp.Views
 
         public void SwitchPlayer()
         {
-            
             currentPlayerIndex = (currentPlayerIndex + 1) % players.Count;
             CurrentPlayer = players[currentPlayerIndex].Name;
             UpdateUI();
@@ -135,14 +127,20 @@ namespace SuperDartBrosApp.Views
                 Player currentPlayerObj = players[currentPlayerIndex];
                 playerThrows[currentPlayerObj].Clear();
                 throwCount = 0;
-                SwitchPlayer();
                 if (settings[1] == "X01")
                 {
                     X01.PlayRound(currentPlayerObj, settings[3]);
                 }
                 currentPlayerObj.ResetPoints();
+                UpdateUI();
+                if (players.Any(p => p.Score == 0))
+                {
+                    WinnerUserControl winnerUserControl = new WinnerUserControl();
+                    winnerUserControl.LblWinner.Content = $"{players[currentPlayerIndex].Name} hat gewonnen!";
+                    Content = winnerUserControl;
+                }
+                SwitchPlayer();
             }
-            UpdateUI();
         }
 
 

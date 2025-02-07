@@ -50,6 +50,11 @@ namespace SuperDartBrosApp
                     player.Score -= pointsInNum.Sum();
                     player.ResetPoints();
                 }
+                else if (player.Score - pointsInNum.Sum() > 1)
+                {
+                    player.Score -= pointsInNum.Sum();
+                    player.ResetPoints();
+                }
             }
             else if (check_out == "Triple Out")
             {
@@ -58,10 +63,20 @@ namespace SuperDartBrosApp
                     player.Score -= pointsInNum.Sum();
                     player.ResetPoints();
                 }
+                else if (player.Score - pointsInNum.Sum() > 2)
+                {
+                    player.Score -= pointsInNum.Sum();
+                    player.ResetPoints();
+                }
             }
             else if (check_out == "Master Out")
             {
                 if (player.Score - pointsInNum.Sum() == 0 && player.Points.Last().Contains("B"))
+                {
+                    player.Score -= pointsInNum.Sum();
+                    player.ResetPoints();
+                }
+                else if (player.Score - pointsInNum.Sum() > 49)
                 {
                     player.Score -= pointsInNum.Sum();
                     player.ResetPoints();
